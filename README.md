@@ -39,9 +39,7 @@ a) A saída será undefined seguido de erro
 
 Justificativa:
 
-O var x é (hoisting), mas sem valor, então console.log(x) imprime undefined.
-O let y também é içado, mas fica na "zona temporal morta" até sua inicialização. Tentar acessá-lo antes da declaração gera um erro.
-
+O `var x` é elevado para o topo do código, mas sem valor, então `console.log(x)` imprime `undefined`. Já o `let y` também é elevado, mas não pode ser usado antes da declaração, o que causa um erro.
 
 
 **2) O seguinte código JavaScript tem um erro que impede sua execução correta. Analise e indique a opção que melhor corrige o problema. Justifique sua resposta.**
@@ -193,7 +191,7 @@ a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
 Justificativa:
 
 A herança permite o compartilhamento de métodos/propriedades entre classes.
-Em JavaScript, isso é feito com extends, que permite que uma classe herde outra.
+No JavaScript, isso é feito com extends, que permite que uma classe herde outra.
 
 
 ______
